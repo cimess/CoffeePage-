@@ -1,0 +1,19 @@
+license
+
+
+
+LICENSE
+Copyright (c) 2025 [Your Full Name]
+Contact: cimessthemanofvalor@gmail.com
+
+All rights reserved.
+
+Terms of Use:
+This software is licensed to you, the user, under the condition that you must contact the author before using, modifying, or distributing any part of this code. Unauthorized use, modification, or distribution is prohibited.
+
+To request permission to use, modify, or redistribute this software, please reach out to the author at the provided contact email (cimessthemanofvalor@gmail.com). Upon approval, specific terms of use may be provided in writing for your intended use.
+
+No Warranty:
+The software is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the author be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
+"""
+
