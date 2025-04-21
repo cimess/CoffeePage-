@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Form Page</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width initail-scale=1.0">
+      <link rel="stylesheet" href="./style.css">
+      </head>
+      <body>
+         <h1>Registration Form</h1>
+         <p>please fill this form with required information</p>
+         <form action="www.facebook.com" method="get">
+         <fieldset>
+            <label for="first-name">Enter Your First Name : </label><input type="text" id="first-name" required>
+            <label for="last-name">Enter Your Last Name : </label><input type="text" id="last-name" required>
+            <label for="email">Enter Your Email : </label><input type="email" id="email"  required>
+            <label for="password">Enter Your New Password : </label><input type="password" id="password" pattern="[a-zA-Z0-5]{8,}" required>
+         </fieldset>
+         <fieldset >
+            <legend>Account type (required)</legend>
+           <label for="radio" > <input class="inline" type="radio" id="radio" name="checkradio" checked> Personal</label>
+           <label for="radio">  <input class="inline" type="radio" id="radio" name="checkradio"> Business</label>
+         </fieldset>
+         <fieldset>
+            <label for="file">Upload a Profile Picture</label>
+            <input type="file" id="file">
+            <label for="age">Input Your age (years)</label>
+            <input type="number" id="age" min="13"  max="120">
+<label for="referrer"></label>
+<select id="referrer">
+   <option>(select one)</option>
+   <option>CimessDev News </option>
+   <option>CimessDev Youtube Channel</option>
+   <option>CimessDev Forum</option>
+   <option>Other</option>
+</select>
+<label for="bio">How did you hear about us ?</label>
+<textarea id="bio" name="bio" placeholder="I like coding on the beach..." cols="30" rows="3" required></textarea>
+         </fieldset>
+         <label for="check" class="inline"><input type="checkbox" id="check"  name="check" required class="inline">I accept the <a href="www.facebook.com">terms and conditions</a></label>
+         <label><input type="submit" value="submit" > </label>
+      </form>
+      </body>
+</html>
