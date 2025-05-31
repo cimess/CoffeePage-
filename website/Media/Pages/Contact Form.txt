@@ -1,0 +1,9 @@
+[text* your-name autocomplete:name placeholder "Your Name"]
+
+[email* your-email autocomplete:email placeholder "Your Email"]
+
+[text* your-subject placeholder "Your Subject"]
+
+[textarea your-message placeholder "Your Message"] 
+
+[submit "Send Message"]

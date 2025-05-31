@@ -1,0 +1,26 @@
+ .container{
+         display: grid;
+       grid-template:repeat(3,100px) / repeat(12,1fr) ;
+       grid-gap: 3px;
+       
+      }
+      .container>div:nth-of-type(odd){
+         background-color: red;
+      }
+      .container>div:nth-of-type(even){
+         background-color: blue;
+      }
+
+    .header{grid-column: 2/-1}
+
+    /* .content{
+      grid-column:2 / -1
+    }
+    .menu{
+      grid-row:1/3
+    }
+    .footer{
+      grid-column:1/-1
+    } */
+
+  
