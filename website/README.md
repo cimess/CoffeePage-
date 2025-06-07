@@ -4,4 +4,4 @@ _Pls read licence_
 
 Live site 👉 [cimess-fruit-store.netlify.app](https://cimess-fruit-store.netlify.app)
 
-![screenshot](./screenshot1.png)
+![screenshot](./screenshot2.png)
