@@ -4,6 +4,16 @@
 html{
    font-size: clamp(0.875rem,1vw+0.25rem,1.25rem);
 }
+.notice {
+  background: #fff8c4;
+  color: #333;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: sans-serif;
+}
+
 body{
    margin: 0;
    padding: 0;
