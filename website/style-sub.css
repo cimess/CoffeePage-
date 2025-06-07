@@ -2,6 +2,12 @@
 *{
    box-sizing: border-box;
 }
+
+html{
+   font-size: clamp(0.875rem,1vw+0.25rem,1.25rem);
+   scroll-behavior: smooth;
+}
+
 body{
    margin: 0;
    padding: 0;
