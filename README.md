@@ -1,6 +1,6 @@
-Pls read licence
+_Pls read licence_
 
-FOR THE E-COMMERCE WEBSITE
+_FOR THE E-COMMERCE WEBSITE check website_
 
 # Cimess Fruit Store 🍎🍌
 
