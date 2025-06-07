@@ -3,7 +3,6 @@ const closeSideBar=document.querySelector(".close-sidebar");
 const sideBarButton=document.querySelector(".navbutton");
 const pageContent=document.querySelector(".container");
 
-
 sideBarButton.addEventListener("click",()=>{
 sideNav.classList.toggle("open")
 sideBarButton.classList.toggle("rotate")
