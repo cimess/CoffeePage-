@@ -10,6 +10,10 @@ body{
   overflow-x: hidden;
   position: relative;
 }
+
+.rotate{
+   transform: rotatex(180deg) rotatey(90deg);
+}
 .translate-x{
 position: absolute;
 top: 0;
@@ -73,10 +77,10 @@ border-radius: 5px;
    grid-template-rows: 1fr auto 1fr;
    
 }
-.header,.main,.footer{
+/* .header,.main{
    height: 100%;
    width: 100%;
-}
+} */
 .header{
    display: flex;
    justify-content: space-between;
@@ -227,9 +231,9 @@ position: relative;
 }
 .div-image{
     justify-self: center;
-height: 100%;
-width: 100%;
-   object-fit: cover;
+height: 40vh;
+width: 40vw;
+   object-fit: contain;
 }
 
 .div-p{
@@ -485,7 +489,7 @@ margin:0 0 5px 0;
    margin-bottom: 50px;
 }
 @media
-   (max-width: 840px){
+   (max-width: 949px){
 .controller{
    display: flex;
 flex-direction: column;
@@ -524,7 +528,7 @@ border-radius: 5px;
 
 
 
-@media (min-width: 1020px){
+@media (min-width: 950px){
 
    .header{
    display: flex;
@@ -642,6 +646,12 @@ height: 50px;
   grid-template-columns: repeat(5,1fr);
   grid-template-rows: repeat(2,1fr);
   margin-bottom: 400px;
+}
+.div-image{
+    justify-self: center;
+height: 100%;
+width: 100%;
+   object-fit: cover;
 }
 
 /* track order button */

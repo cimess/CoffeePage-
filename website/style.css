@@ -1,15 +1,20 @@
 *{
    box-sizing: border-box;
 }
+html{
+   font-size: clamp(0.875rem,1vw+0.25rem,1.25rem);
+}
 body{
    margin: 0;
    padding: 0;
    height: 100%;
    width: 100%;
    box-sizing: border-box;
-   font-size: 16px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
+}
+.rotate{
+   transform: rotatex(180deg) rotatey(90deg);
 }
 .translate-x{
 position: absolute;
@@ -167,7 +172,7 @@ background-repeat: no-repeat;
    
 }
 .large-text{
-font-size: 70px;
+font-size: 4rem;
 font-weight: 600;
 -webkit-text-stroke: #634C9F 1px;
 color: #39245F;
@@ -175,7 +180,7 @@ margin: 10px auto;
 line-height: 60px;
 }
 .small{
-   font-size: 20px;
+   font-size: 1rem;
    color:#626262 ;
 }
 button{
@@ -185,6 +190,9 @@ button{
 width: 130px;
 padding: 10px 0;
 border-radius: 5px;
+}
+.shop-button>a{
+   color: #ffff;
 }
 .icon{
    stroke-width: 3px;
@@ -216,7 +224,6 @@ grid-template-columns: repeat(2,1fr);
                         " m m m"
                         ;
 }
-margin: 0 auto 50px;
 .h{grid-area: h;
    margin: 0 auto 20px
 }
@@ -231,7 +238,7 @@ margin: 7px auto;}
    margin: 0 auto;
 }
 .title>.title-text>p{
-  font-size: 30px; 
+  font-size: 2rem; 
   font-weight: 600;
   color: #212020;
 }
@@ -240,7 +247,7 @@ margin: 7px auto;}
    align-self: center;
 }
 .title-a>a{
-     font-size: 20px; 
+     font-size: 1.2rem; 
    text-decoration: underline;
    font-weight: bold;
    color: #000000;
@@ -289,9 +296,9 @@ position: relative;
 }
 .div-image{
     justify-self: center;
-height: 100%;
-width: 100%;
-   object-fit: cover;
+height: 40vh;
+width: 40vw;
+   object-fit: contain;
 }
 
 .div-p{
@@ -323,7 +330,10 @@ width: 100%;
    font-size: 15px;
    margin-bottom: 20px;
    border: none;
-      color:black ;
+      
+}
+.brand-button>a{
+color:black 
 }
 .brand-button>.icon{
    color: unset;
@@ -336,7 +346,7 @@ margin-right: 9px;
    color: #FF5E2A;
 }
 .brand>.bold{
-   font-size: 25px;
+   font-size: 1.5rem;
    font-weight: bolder;
    color: #2B2B2B;
 }
@@ -383,7 +393,7 @@ align-items: center;
    grid-area: n;
 }
 input[type="email"],input[type="text"]{
-   font-size:20px;
+   font-size:1rem;
 line-height: 40px;
    border-radius: 5px;
    padding: 0px 0 3px 10px;
@@ -462,7 +472,7 @@ display: none;
    
 }
 
-@media (min-width: 1020px){
+@media (min-width: 950px){
 
    .header{
    display: flex;
@@ -544,6 +554,12 @@ width: 80%;
   gap: 17px;
   grid-template-columns: repeat(5,1fr);
   grid-template-rows: repeat(2,1fr);
+}
+   .div-image{
+    justify-self: center;
+height: 100%;
+width: 100%;
+   object-fit: contain;
 }
 .margin{
     margin-bottom: 300px;
