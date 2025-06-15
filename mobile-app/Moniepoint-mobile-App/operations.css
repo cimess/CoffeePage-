@@ -6,12 +6,38 @@
    background-color: rgb(193, 193, 193);
    border-radius: 10px;
 }
+input[type="radio"]{
+   font-size: larger;
+   transform: scale(1.2);
+}
+
+table{
+   width: 100%;
+   table-layout: fixed;
+}
+td.wide,th.wide{
+   width: 60%;
+   white-space: normal;
+   word-wrap: break-word;
+}
+td.narrow,th.narrow{
+   width: 20%;
+   white-space: normal;
+   word-wrap:break-word
+}
+.a:hover{
+   background-color: #0357ED;
+   color: #ffff;
+}
 
 .bg-light-blue{
    background-color: #c9e8fc;
 }
 .bg-white{
    background-color: rgb(255, 255, 255);
+}
+.bg-db{
+   background-color: rgb(1, 1, 79);
 }
 .bg-lighter-blue{
   color: rgb(0, 156, 151);
@@ -31,11 +57,20 @@
 .height{
    height: 50px;
 }
+.height-3{
+   height: 70px;
+}
 .width{
    width: 100%;
 }
-.border-2{
-   border: red solid 3px;
+.width-80{
+   width: 80%;
+}
+.height-full{
+height: 100%;
+}
+.text-c{
+   text-align: center;
 }
 .text-l{
    text-align: left;
@@ -46,12 +81,33 @@
 .padding{
    padding: 10px;
 }
+.padding-5{
+   padding: 12px 5px;
+}
+.padding-l{
+   padding-left: 10px;
+}
+.padding-s{
+   padding: 3px;
+   border-radius: 5px;
+}
+.padding-10{
+   padding: 3px;
+}
+.padding-b{
+   padding-bottom: 20px;
+}
+.padding-b-u{
+   padding: 20px 0;
+}
+
 .padding-W{  height: 75%;
 padding: 28px 15px 0;
   margin: 50px 0 auto 0 ;
 }
 .padding-check-balance{  
-   padding:20px 10px 70px ;
+   padding:20px 10px 0px ;
+   height: 295px;
 }
 .full-container{
 
@@ -62,6 +118,10 @@ padding: 28px 15px 0;
 
 .border{
  border: 2px solid rgb(193, 193, 193);
+   border-radius: 5px;
+}
+.border-3{
+ border: 1px solid rgb(57, 55, 55);
    border-radius: 5px;
 }
 .border2{
@@ -88,6 +148,13 @@ padding: 28px 15px 0;
    border: none;
     cursor: pointer;
 }
+.button-w2{
+   background-color:#ffffff;
+   padding: 5px;
+   border-radius: 10px;
+   border: none;
+    cursor: pointer;
+}
 .back-button{
    min-width: 50px;
 background-color: transparent;
@@ -108,11 +175,20 @@ padding: 15px;
    align-items: start;
    gap: 10px;
 }
+.gap-20{
+   gap:20px;
+}
+.gap{
+   gap:10px
+}
 .flex-between{
    justify-content: space-between;
 }
 .al-c{
    align-items: center;
+}
+.jc-c{
+   justify-content: center;
 }
 .al-s{
    align-self:flex-end;

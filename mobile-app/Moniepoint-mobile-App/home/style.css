@@ -1,6 +1,10 @@
 *{
    box-sizing: border-box;
 }
+
+.no-scroll-line::-webkit-scrollbar{
+   display: none;
+}
 input ::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
    -webkit-appearance: none;
@@ -19,10 +23,34 @@ body{
    padding: 0;
    height: 100vh;
 }
+.scroll{
+   overflow-y: auto;
+}
+.bd-r-l{
+   border-top-left-radius: 10px;
+}
+.bd-r-r{
+   border-top-right-radius: 10px;
+}
+.bd-rb-l{
+   border-bottom-left-radius: 10px;
+}
+.bd-rb-r{
+   border-bottom-right-radius: 10px;
+}
 .transparent{
    background-color: black;
    border: none;
    cursor: pointer;
+}
+.border-r{
+   border-radius: 10px;
+}
+.border-r2{
+   border-radius: 20px;
+}
+.box-s{
+   box-shadow: 0px 0px 5px  rgba(0,0,0);
 }
 .border{
    border: #ffff solid 3px;
@@ -33,11 +61,29 @@ body{
   background-color: rgba(128, 147, 160, 0.776);
   
 }
+.margin-auto{
+   margin: 0 auto;
+}
 .margin-10{
    margin: 0 4px;
 }
+.margin-20{
+   margin: 0 40px 10px 10px;
+}
+.margin-l-r{
+   margin-right: 30px;
+}
+.margin-l{
+   margin-left: 10px;
+}
 .mg-b{
    margin-bottom: 10px;
+}
+.mg-bxx{
+   margin-bottom: 40px;
+}
+.mg-bx{
+   margin-bottom: 20px;
 }
 .border-n{
    border: none;
@@ -55,15 +101,21 @@ body{
    font-size: xx-large;
    font-weight: 900;
 }
+
 .font-weight-thick{
    font-weight: bold;
 }
+
 .small-text{
    font-size: smaller;
   
 }
 .x-text{
    font-size: x-large;
+   font-weight: bold;
+}
+.x-text2{
+   font-size: large;
    font-weight: bold;
 }
 .xx-text{
@@ -76,6 +128,7 @@ body{
 .display-grid{
    display: grid;
 }
+
 .grey-color{
    color: rgb(116, 116, 116);
 }
@@ -92,10 +145,16 @@ body{
    color: #003694;
 }
 .o{
-   color: rgb(255, 136, 0);
+   color: rgb(194, 104, 1);
 }
 .g{
    color: green;
+}
+.g-b{
+   color: rgb(0, 128, 113);
+}
+.gl{
+   color: rgb(22, 167, 22);
 }
 .rd{
    color: #C2185B;
@@ -112,8 +171,14 @@ body{
 .padding-color-b{
    background-color: rgba(186, 196, 255, 0.445);
 }
+.padding-color-lb{
+   background-color:#598be248;
+}
 .padding-color-o{
    background-color: rgba(255, 227, 186, 0.445);
+}
+.padding-color-o-l{
+   background-color: orange;
 }
 .padding-color-db{
    background-color: rgba(186, 188, 255, 0.445);
@@ -121,8 +186,23 @@ body{
 .padding-color-r{
    background-color: rgba(247, 171, 246, 0.445);
 }
+.padding-color-r-l{
+   background-color: rgb(255, 0, 0);
+}
+.padding-color-g{
+   background-color: rgba(132, 203, 175, 0.445);
+}
+.padding-color-g-l{
+   background-color: green;
+}
+.padding-color-y{
+   background-color:rgb(238, 195, 2);
+}
 .padding-color{
    background-color: rgb(175, 67, 152);
+}
+.padding-color-d{
+   background-color: rgb(0, 0, 0);
 }
 .dark-color{
    color: #000;
@@ -240,9 +320,20 @@ grid-template-columns: repeat(2,1fr);
     cursor: pointer;
     text-decoration: none;
 }
+a{
+    cursor: pointer;
+    text-decoration: none; 
+}
 .box{
    padding: 10px;
    border-radius: 30px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+}
+.box2{
+   padding: 8px;
+   border-radius: 60px;
    display: inline-flex;
    align-items: center;
    justify-content: center;
