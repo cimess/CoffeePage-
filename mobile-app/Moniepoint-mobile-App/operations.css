@@ -176,6 +176,9 @@ th.narrow {
   align-items: start;
   gap: 10px;
 }
+.r-gap{
+  row-gap: 20px;
+}
 .gap-20 {
   gap: 20px;
 }
@@ -232,8 +235,8 @@ summary::-webkit-details-marker {
   position: absolute;
   background-color: #ffff;
   padding: 10px 15px;
-  top: 45vh;
-  left: 8vw;
+  top: 50%;
+  left: 10%;
   gap: 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0);
   z-index: 999;
@@ -253,8 +256,8 @@ summary::-webkit-details-marker {
   width: 78%;
   position: absolute;
   background-color: #ffff;
-  top: 25vh;
-  left: 9vw;
+  top: 25%;
+  left: 10%;
   box-shadow: 0px 0px 5px rgba(0, 0, 0);
   z-index: 999;
   border-radius: 10px;

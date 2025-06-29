@@ -21,7 +21,7 @@ input:focus {
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
 }
 .scroll {
   overflow-y: auto;
@@ -214,17 +214,35 @@ body {
 .t {
   text-align: center;
 }
+.wrapper{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background: linear-gradient(270deg,#203a43, #7873f5, #203a43);
+  background-size: 600% 600%;
+  animation: gradientMove 12s ease infinite;
+
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 .phone-casing {
-  height: 90%;
-  width: 400px;
+  height: 100%;
+ max-height: 600px;
+ width: 100%;
+ max-width: 350px;
   border-radius: 15px;
   flex-direction: column;
-  margin: 10px auto auto auto;
   background-color: rgb(33, 219, 219);
   box-sizing: border-box;
   padding-top: 20px;
   position: relative;
+  overflow-y: hidden;
 }
 
 .logo-container {
@@ -302,18 +320,23 @@ body {
 }
 .container {
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  gap: 10px;
+  padding: 0 10px;
 }
 .transaction-box {
-  height: 150px;
+ height: 140px;
   border-radius: 5px;
-  width: 140px;
-  margin: 10px;
+  width: 100%;
+  max-width: 140px;
+padding: 5px 0;
   box-shadow: 0px 2px 5px 3px #0006;
   background-color: #ffff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+
   cursor: pointer;
   text-decoration: none;
 }
